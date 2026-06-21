@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" />
+	<region id="MaterialPresetBank">
+		<node id="MaterialPresetBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="b76528f5-798f-c6cc-86fe-d75ad8d656d5" />
+					<attribute id="Name" type="LSString" value="EYES_Half_Illithid_000" />
+					<attribute id="Type" type="FixedString" value="MaterialPreset" />
+					<children>
+						<node id="MaterialPresets">
+							<children>
+								<node id="Object">
+									<attribute id="MapKey" type="FixedString" value="b76528f5-798f-c6cc-86fe-d75ad8d656d5" />
+									<children>
+										<node id="ForcePresetValues">
+											<children>
+												<node id="ScalarParameters">
+													<attribute id="Custom" type="bool" value="True" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="IllithidIntensity" />
+													<attribute id="Value" type="float" value="0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

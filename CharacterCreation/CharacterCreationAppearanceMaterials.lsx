@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="CharacterCreationAppearanceMaterials">
+        <node id="root">
+            <children>
+                <node id="CharacterCreationAppearanceMaterial">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4a10031dgfab1g8e57g21c2gecf0759c4718" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="1995315b-4a02-fa54-61bc-bd53996708a4"/>
+                    <attribute id="MaterialType" type="FixedString" value="Scar"/>
+                    <attribute id="UUID" type="guid" value="62ca1043-a5d4-4d8a-9650-91a18ae232f6"/>
+                </node>
+                <node id="CharacterCreationAppearanceMaterial">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h829bf76dgf514gf3cagf539g69806d4f63ee" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="57994d00-019f-a682-98ec-4b8b7045364d"/>
+                    <attribute id="MaterialType" type="FixedString" value="Makeup"/>
+                    <attribute id="UUID" type="guid" value="de74e50e-fad1-430c-8f28-1f83db9b573d"/>
+                </node>
+                <node id="CharacterCreationAppearanceMaterial">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h81e5cf41gfd5dg88b6g5a93g734b0025f791" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="7ced30ca-59b2-5b3e-f6c5-357bb4cce2f6"/>
+                    <attribute id="MaterialType" type="FixedString" value="Makeup"/>
+                    <attribute id="UUID" type="guid" value="8c61e110-4218-410b-a7c6-b03d6ddaf3c3"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -13,3 +13,7 @@ end)
 
 loadStats()
 AppearanceManager.RegisterListeners()
+
+Ext.Events.SessionLoaded:Subscribe(function()
+    _P("[NormalHalfIllithidEyes] Server Lua loaded.")
+end)

@@ -68,7 +68,7 @@ function AppearanceManager.ApplyAppearance(character)
     Channels.AppearanceRefresh:Broadcast({ character = character })
 end
 
-local function ensureWatcherPassive(character)
+local function grantSpellbookSpells(character)
     character = resolveCharacter(character)
     if not character or not hasCeremorph(character) then
         return
@@ -76,6 +76,13 @@ local function ensureWatcherPassive(character)
 
     if Osi.HasPassive(character, Constants.PASSIVE_WATCHER) ~= 1 then
         Osi.AddPassive(character, Constants.PASSIVE_WATCHER)
+    end
+
+    if Osi.HasSpell(character, Constants.SHOUT_NORMAL_EYES) ~= 1 then
+        Osi.AddSpell(character, Constants.SHOUT_NORMAL_EYES, 0, 0)
+    end
+    if Osi.HasSpell(character, Constants.SHOUT_TOGGLE_VEINS) ~= 1 then
+        Osi.AddSpell(character, Constants.SHOUT_TOGGLE_VEINS, 0, 0)
     end
 end
 
@@ -119,7 +126,7 @@ local function refreshParty()
     for i = 1, #party do
         local member = resolveCharacter(party[i][1])
         if member and hasCeremorph(member) then
-            ensureWatcherPassive(member)
+            grantSpellbookSpells(member)
             AppearanceManager.ApplyAppearance(member)
         end
     end
@@ -132,7 +139,7 @@ function AppearanceManager.RegisterListeners()
 
     Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(character)
         if hasCeremorph(resolveCharacter(character)) then
-            ensureWatcherPassive(character)
+            grantSpellbookSpells(character)
             AppearanceManager.ApplyAppearance(character)
         end
     end)
@@ -144,7 +151,7 @@ function AppearanceManager.RegisterListeners()
         end
 
         if status == Constants.STATUS_PARTIAL_CEREMORPH then
-            ensureWatcherPassive(character)
+            grantSpellbookSpells(character)
             AppearanceManager.ApplyAppearance(character)
             return
         end

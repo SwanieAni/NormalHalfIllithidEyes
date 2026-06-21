@@ -33,6 +33,34 @@ Spells are granted automatically when the half-illithid transformation is active
 
 ## Testing checklist
 
+### Before testing (Toolkit workflow)
+
+1. **BG3 Script Extender** must be installed (`DWrite.dll` in `bin`).
+2. After **Publish Local**, copy the `.pak` to `%LOCALAPPDATA%\\Larian Studios\\Baldur's Gate 3\\Mods\\`.
+3. **Enable the mod** in BG3 Mod Manager (or in-game mod settings) and restart the game fully — a `reset` in the SE console is not enough after repacking.
+4. In the SE console, type `server` then run the diagnostics below.
+
+### Diagnostics (SE console, server context)
+
+```lua
+-- Mod Lua loaded?
+_P(Mods and Mods.NormalHalfIllithidEyes)
+
+-- Stats registered?
+_P(Ext.Stats.Get("Shout_NHI_ToggleNormalEyes", "SpellData"))
+_P(Ext.Stats.Get("NHI_PartialCeremorphWatcher", "PassiveData"))
+
+-- Force-grant spells (if stats exist):
+local c = Osi.GetHostCharacter()
+Osi.ApplyStatus(c, "TAD_PARTIAL_CEREMORPH", -1, 1, c)
+Osi.AddSpell(c, "Shout_NHI_ToggleNormalEyes", 1, 0)
+Osi.AddSpell(c, "Shout_NHI_ToggleIllithidVeins", 1, 0)
+```
+
+If `Ext.Stats.Get` returns **nil**, the mod stats are not loading — the `.pak` is missing `Public/.../Stats/` files or the mod is not active in load order.
+
+Spells appear in the spellbook under **Common** (scroll down past class spell levels), not in class spell tabs.
+
 ### Singleplayer
 
 - [ ] Eat tadpole — default is vanilla glowing eyes + veins

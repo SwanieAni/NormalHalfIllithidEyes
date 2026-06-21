@@ -1,10 +1,12 @@
 local Constants = Ext.Require("Shared/Constants.lua")
 local AppearanceManager = Ext.Require("Server/AppearanceManager.lua")
+local SpellRegistration = Ext.Require("Server/SpellRegistration.lua")
 
 local function loadStats()
     for _, path in ipairs(Constants.STAT_FILES) do
         Ext.Stats.LoadStatsFile(path, 1)
     end
+    SpellRegistration.RegisterCommonSpells()
 end
 
 Ext.Events.ResetCompleted:Subscribe(function()

@@ -43,14 +43,19 @@ Spells are granted automatically when the half-illithid transformation is active
 ### Diagnostics (SE console, server context)
 
 ```lua
--- Mod Lua loaded?
+-- Mod Lua loaded? (should print a table after loading a save)
 _P(Mods and Mods.NormalHalfIllithidEyes)
 
--- Stats registered?
-_P(Ext.Stats.Get("Shout_NHI_ToggleNormalEyes", "SpellData"))
-_P(Ext.Stats.Get("NHI_PartialCeremorphWatcher", "PassiveData"))
+-- Stats registered? (second arg is level, NOT type — omit it)
+_P(Ext.Stats.Get("Shout_NHI_ToggleNormalEyes"))
+_P(Ext.Stats.Get("NHI_PartialCeremorphWatcher"))
 
--- Force-grant spells (if stats exist):
+-- Or search all spell stats for NHI:
+for _, name in ipairs(Ext.Stats.GetStats("SpellData")) do
+    if name:find("NHI", 1, true) then _P(name) end
+end
+
+-- Force-grant after ceremorph:
 local c = Osi.GetHostCharacter()
 Osi.ApplyStatus(c, "TAD_PARTIAL_CEREMORPH", -1, 1, c)
 Osi.AddSpell(c, "Shout_NHI_ToggleNormalEyes", 1, 0)

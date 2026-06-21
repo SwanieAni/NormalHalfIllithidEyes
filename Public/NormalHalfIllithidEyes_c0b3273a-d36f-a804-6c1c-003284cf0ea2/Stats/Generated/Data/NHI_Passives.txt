@@ -1,0 +1,7 @@
+new entry "NHI_PartialCeremorphWatcher"
+type "PassiveData"
+data "DisplayName" ""
+data "Description" ""
+data "Icon" ""
+data "Properties" "IsHidden"
+data "Boosts" "UnlockSpell(Shout_NHI_ToggleNormalEyes);UnlockSpell(Shout_NHI_ToggleIllithidVeins);"

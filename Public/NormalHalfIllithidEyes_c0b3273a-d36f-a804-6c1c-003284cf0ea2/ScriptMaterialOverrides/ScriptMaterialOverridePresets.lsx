@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="ScriptMaterialOverridePresets">
+        <node id="root">
+            <children>
+                <node id="ScriptMaterialOverridePreset">
+                    <attribute id="PresetName" type="FixedString" value="NHI_ScarsOnly"/>
+                    <attribute id="UUID" type="guid" value="b1c2d3e4-f5a6-4789-b012-3456789abcde"/>
+                    <children>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="962c9d2a-fabc-426a-8b10-b0dd197e79a3"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abcde"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce0"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce1"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="ScriptMaterialOverridePreset">
+                    <attribute id="PresetName" type="FixedString" value="NHI_VanillaEyes_NoVeins"/>
+                    <attribute id="UUID" type="guid" value="b1c2d3e4-f5a6-4789-b012-3456789abcdf"/>
+                    <children>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="962c9d2a-fabc-426a-8b10-b0dd197e79a3"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abcdf"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce0"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce1"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="e9b87370-28ab-47d1-a455-798dc8b9785d"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="e56ee0a4-6f45-4da1-a57b-dc78f82d9cfd"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="086d7e58-7dd0-4151-89e1-d1857fa03e69"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="e0509587-7930-45db-aac7-1004530728fb"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="adf6bc37-d3ff-4225-b0e4-081d9ff3743f"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="ScriptMaterialOverridePreset">
+                    <attribute id="PresetName" type="FixedString" value="NHI_NormalEyes_NoVeins"/>
+                    <attribute id="UUID" type="guid" value="b1c2d3e4-f5a6-4789-b012-3456789abce0"/>
+                    <children>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="962c9d2a-fabc-426a-8b10-b0dd197e79a3"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abcdf"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce0"/>
+                        </node>
+                        <node id="ParameterUUIDs">
+                            <attribute id="Object" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce1"/>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

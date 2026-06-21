@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="ScriptMaterialOverrideParameters">
+        <node id="root">
+            <children>
+                <node id="ScriptMaterialOverrideParameter">
+                    <attribute id="ParameterName" type="FixedString" value="Scar_Weight"/>
+                    <attribute id="ParameterType" type="FixedString" value="Float"/>
+                    <attribute id="ParameterValue" type="LSString" value="1.0"/>
+                    <attribute id="UUID" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abcde"/>
+                </node>
+                <node id="ScriptMaterialOverrideParameter">
+                    <attribute id="ParameterName" type="FixedString" value="Scar_Weight"/>
+                    <attribute id="ParameterType" type="FixedString" value="Float"/>
+                    <attribute id="ParameterValue" type="LSString" value="0.0"/>
+                    <attribute id="UUID" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abcdf"/>
+                </node>
+                <node id="ScriptMaterialOverrideParameter">
+                    <attribute id="ParameterName" type="FixedString" value="IllithidColorWeight"/>
+                    <attribute id="ParameterType" type="FixedString" value="Float"/>
+                    <attribute id="ParameterValue" type="LSString" value="1.0"/>
+                    <attribute id="UUID" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce0"/>
+                </node>
+                <node id="ScriptMaterialOverrideParameter">
+                    <attribute id="ParameterName" type="FixedString" value="ScarIndex"/>
+                    <attribute id="ParameterType" type="FixedString" value="Float"/>
+                    <attribute id="ParameterValue" type="LSString" value="1.0"/>
+                    <attribute id="UUID" type="guid" value="a1b2c3d4-e5f6-4789-a012-3456789abce1"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
